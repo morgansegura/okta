@@ -2,17 +2,4 @@
 /*@import "tailwindcss/components";*/
 /*@import "tailwindcss/utilities";*/
 
-.body {
 
-}
-.wrapper {
-    &--royal-blue {
-
-    }
-}
-.container {
-    max-width: 1400px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 0 auto;
-}

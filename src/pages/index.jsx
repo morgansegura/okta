@@ -4,8 +4,8 @@ import "../css/styles.css"
 /* Components */
 import Layout from '../components/Layout'
 
-const Home = ({children}) => (
-  <Layout>
+const Home = () => (
+  <Layout className="wrapper--royal-blue">
     <div className="container">
       <h1>Home Page</h1>
       <h2>Checklist</h2>

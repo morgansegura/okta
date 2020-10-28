@@ -1,15 +1,13 @@
 import {createGlobalStyle} from 'styled-components'
-import {generateMedia} from 'styled-media-query'
-
-const customMedia = generateMedia({
-    small: '480px',
-    medium: '768px',
-    large: '1024px',
-    huge: '1400px',
-})
+// import {generateMedia} from 'styled-media-query'
+//
+// const customMedia = generateMedia({
+//     small: '480px',
+//     medium: '768px',
+//     large: '1024px',
+//     huge: '1400px',
+// })
 const GlobalStyles = createGlobalStyle`
-
-  /* @import url('https://use.typekit.net/oji6pho.css'); */
 
   /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -99,9 +97,14 @@ const GlobalStyles = createGlobalStyle`
         
     }
   }
+  .wrapper {
+    &--royal-blue {
+        background-color: var(--royal-blue);
+    }
+  }
 
   :root { 
-      
+      --royal-blue: #292654;
   }
 `
 // Magenta https://www.color-hex.com/color-palette/31535

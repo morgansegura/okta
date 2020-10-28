@@ -1,0 +1,36 @@
+{
+  "name": "okta-morgan-segura",
+  "private": false,
+  "description": "A practice test,",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.24.85",
+    "gatsby-plugin-offline": "^3.2.38",
+    "gatsby-plugin-postcss": "^3.0.4",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "postcss": "^8.1.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2",
+    "tailwindcss": "^1.9.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morgansegura/okta"
+  },
+  "bugs": {
+    "url": "https://github.com/morgansegura/okta/issues"
+  }
+}

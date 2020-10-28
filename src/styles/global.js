@@ -63,9 +63,16 @@ const GlobalStyles = createGlobalStyle`
   html, body {
     background-color: inherit;
   }
+  
+  /**
+  My Styles start Here
+  **/
+  
+  
   body {    
     font-weight: 600;
     color: white;
+    background-color: var(--royal-blue);
     text-size-adjust: 100%;
     font-size: 100%;
     font-family: var(--base-font);
@@ -98,13 +105,67 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     &--royal-blue {
         background-color: var(--royal-blue);
     }
   }
-
+  .container {
+    flex: 1 0 auto;
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    z-index: 1;  
+    padding: 0 24px;
+  }
+  /* Font Styling */
+    h1 {
+    
+    }
+    h2 {
+        font-size: 2.90219rem;
+    }
+    p {
+    
+    }
+    .section {
+        h2 {
+            border-top: 4px solid #fff;
+            display: inline-block;
+            padding-top: 12px;
+            margin-bottom: 48px;
+        }
+    }
+    .sponsors {
+        background: var(--cobalt-blue);
+        .icons-wrapper {
+            display: grid;
+            grid-template-rows: repeat(1, minmax(0, 1fr));
+            gap: 1rem;
+        }
+        .icon-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            align-content: stretch;
+            transition: transform .25s ease-in-out;  
+            padding: 1rem;      
+            max-width: 200px;
+            min-width: 200px;
+            background: red;
+        }
+    }
+        
+            
   :root { 
-      --royal-blue: #292654;
+        --base-font: 'Montserrat', sans-serif;
+        --royal-blue: #292654;
+        --cobalt-blue: #13499e;
   }
 `
 // Magenta https://www.color-hex.com/color-palette/31535

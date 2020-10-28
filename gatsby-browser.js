@@ -1,1 +1,1 @@
-import "./src/css/styles.css"
+import "tailwindcss/dist/base.min.css"

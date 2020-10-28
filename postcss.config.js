@@ -1,3 +1,7 @@
 module.exports = () => ({
-    plugins: [require("tailwindcss")],
+    plugins: [
+        require(`precss`),
+        require(`tailwindcss`)(`./src/css/styles.css`),
+        require(`autoprefixer`)()
+    ]
 })

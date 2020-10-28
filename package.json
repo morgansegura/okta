@@ -15,14 +15,18 @@
   },
   "dependencies": {
     "autoprefixer": "^10.0.1",
+    "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.24.85",
     "gatsby-plugin-offline": "^3.2.38",
     "gatsby-plugin-postcss": "^3.0.4",
     "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-styled-components": "^3.3.14",
     "postcss": "^8.1.4",
     "precss": "^4.0.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.2.0",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "prettier": "2.1.2",

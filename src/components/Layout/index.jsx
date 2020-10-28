@@ -1,8 +1,7 @@
 import React from 'react'
 /* Components */
-
-
-const Layout = props => {
+import GlobalStyles from '../../styles/global'
+const Layout = ({children}) => {
 
     return (
         <div>

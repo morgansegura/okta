@@ -95,6 +95,7 @@ const GlobalStyles = createGlobalStyle`
   body::-webkit-scrollbar-thumb {
     outline: 1px solid slategrey;
     cursor: pointer;
+    background-color: rgba(20,73,158, 0.5);
     transition: all 0.3s ease-out;
     
     &:hover {
@@ -121,6 +122,40 @@ const GlobalStyles = createGlobalStyle`
     padding: 0 24px;
     margin: auto;
     z-index: 1;  
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2.125rem;
+    
+    &-nav {
+        display: flex;
+        a {
+            display: inline-flex;
+            opacity: 0.65;
+            padding: 0.5rem;        
+            font-size: 0.85rem;
+            transition: all 0.3s ease-out;
+            
+            &:hover {
+                opacity: 0.8;
+                text-decoration: underline;
+            }            
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+    .logo {
+        font-weight: 800;
+        flex: 1 0 auto;
+    }
+    .logo > span {
+        font-weight: 600;
+    }
   }
   /* Font Styling */
     h1 {
@@ -248,44 +283,58 @@ const GlobalStyles = createGlobalStyle`
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(41, 38, 84, 0.8);
-        transition: all 0.3s ease-out;
-        
+        background-color: rgba(20,73,158, 0.98);
+        transition: all 0.3s ease-in;
+                
         &.modal-is--open {
             width: 100%;
             height: 100%;
             opacity: 1;
             visibility: visible;
             z-index: 1000;
+            transition: all 0.3s ease-out;
         }
-        
+        &__logo-image {
+            margin: 1rem auto;
+            width: 100%;
+            max-width: 200px;
+        }
         .modal-content {
-            background-color: white;
-            width: 100%; 
-            max-width: 300px;
+            width: 90%; 
+            margin: 0 auto;
             border-radius: 10px;
             padding: 2rem;
-            boz-shadow: 0 0 10px 3px rgba(0,0,0,0.8);
-            color: #333;
-        }
-        h4 {
-            font-size: 2rem;
-            color: #333;
-            font-weight: 600;
+            color: #fff;
         }
         p {
-            color: #777;
+            text-align: ceenter;
+            color: white;
             font-size: 1rem;
         }
         a {
         
         }
         .close {
+            cursor: pointer;
             position: absolute;
             top: 1rem;
             right: 1rem;
-            color: #333;
+            color: #fff;
+            opacity: 0.65;
+            width: 35px;
+            height: 35px;
+            padding: 5px;
+            outline: none;
+            transform: scale(1);
             transition: all 0.3s ease-out;
+            
+            &:hover {
+                opacity: 1;
+                transform: scale(1.075);            
+            }            
+            &:active {
+                opacity: 0.8;            
+            }
         }
     }    
             

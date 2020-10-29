@@ -1,5 +1,5 @@
 module.exports = {
-  sitemetadata: {
+  siteMetadata: {
 
   },
   plugins: [
@@ -34,8 +34,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Montserrat',
-            weights: ['300', '400', '600', '700']
+            family: 'OpenSans',
+            weights: ['400', '600', '800', '900']
           },
         ]
       }

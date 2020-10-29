@@ -337,7 +337,29 @@ const GlobalStyles = createGlobalStyle`
             }
         }
     }    
-            
+    .posts {
+        background-color: #efefef;
+        height: 100%;
+        color: #333;
+    }
+    .post-item {
+        .post-header {
+            .title {
+                color: #222;
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 0.125rem;
+            }
+            .author {
+                font-size: 0.75rem;
+                color: #555;
+                margin-bottom: 0.5rem;
+            }    
+        }
+        .body {
+            margin-bottom: 2rem;
+        }    
+    }        
   :root { 
         --base-font: 'Open Sans', sans-serif;
         --royal-blue: #292654;

@@ -11,7 +11,7 @@ const Layout = ({children, className}) => {
                 <Link className="logo" to={'/'}>oktane<span>20</span></Link>
                 <nav className="header-nav">
                     <Link to={'/sponsors'}>Sponsors</Link>
-                    <Link to={'/blog'}>Blog</Link>
+                    <Link to={'/posts'}>Posts</Link>
                     <Link to={'/contact'}>Contact</Link>
                 </nav>
             </header>

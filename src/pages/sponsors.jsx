@@ -1,7 +1,5 @@
 /* Components */
 import React from "react"
-/* Import CSS */
-import "../css/styles.css"
 /* Components */
 import Layout from '../components/Layout'
 import IconBox from '../components/IconBox'
